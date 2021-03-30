@@ -1,9 +1,12 @@
+<!-- NOTE: this site is made from a bootstrap template. So if I have questions about syntax or class sections, etc. then go to the getbootstrap.com website-->
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- the href="cc/style.css" is telling the document to reference that seperate file for the CSS for this site (called style.css). If I want to edit the CSS and HTML simultanously, in Brackets click view>vertical split -->
 
     <!-- begin twitter summary card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -22,6 +25,7 @@
     <meta property="og:description" content="">
 
     <!-- Schema.org structured data -->
+    <!-- fill this section out to improve site SEO -->
     <script data-schema="NewsArticle" type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -59,7 +63,7 @@
         
         <!-- Uncomment below for background video -->
         
-<!--         <video src="assets/sample-images/video.mp4" muted playsinline autoplay width="100%" height="100%"></video>-->
+<!--         <video src="assets/sample-images/video.mp4" muted playsinline autoplay loop width="100%" height="100%"></video>-->
         
       </header>
     </div>
@@ -79,6 +83,7 @@
 
       <div class="row justify-content-center mt-5">
         <div class="col-12 col-sm-8 col-md-6">
+            <!--            setting the size of the text well to change depending on mobile vs. larger screen-->
           <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
 
           <p>I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</p>
@@ -94,7 +99,7 @@
       
       
       <div class="row justify-content-center mt-5">
-        <div class="col-12 col-sm-8 col-md-6">
+        <div class="col-12 col-sm-8 col-md-6"> 
           <p>O my friend -- but it is too much for my strength -- I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
 
           <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
@@ -114,6 +119,7 @@
         </div>
         <div class="col-6">
           <img src="assets/sample-images/desk-1.jpg" class="img-fluid" alt="Picture of a desk">
+            <!-- img-fluid tag makes the images responsive to change size as the viewport size changes --> 
         </div>
       </div>
       
@@ -130,6 +136,7 @@
           
           <!-- Example of a grid of photos -->
           <div class="row justify-content-center gx-2 my-3">
+              <!-- gx referes to the gutter. Aka space between photos. my refers to the space above and below the image. Numbers go from 0-5 (0 is nothing, 5 is largest) -->
             <div class="col-4 my-1">
               <img src="assets/sample-images/desk-1.jpg" class="img-fluid" alt="desk">
             </div>
@@ -228,6 +235,7 @@
         <div class="row justify-content-center d-flex flex-column align-items-center">
           <div class="col-10 col-sm-6 col-md-4">
               <p class="lead bg-light story" data-image="assets/sample-images/map-3.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- data-image tag specifies which image will show up behind that specific block of text-->
           </div>
         </div>
         
@@ -259,7 +267,7 @@
     </div><!-- close container -->
     
     
-    
+    <!-- the below section controls what's in the footer of the site. Including the social media tags. If I actually want to send to a specific site, will need to fill in a website link where there's currently a # symbol. -->
     <footer class="my-5 text-center">
       <p>Website by your name.</p>
       <nav class="socialmedia text-center">
@@ -282,7 +290,7 @@
 
         
 
-        //ignore these four lines of code.
+        //ignore these four lines of code. It's the javascript controlling the graphics scrolling section.
         const spread_of_items = 200; // how spread apart items are.
         const speed = 250; //speed of transition in milliseconds
         const num_of_items = $(".scroll-graphic").children().length;
@@ -291,7 +299,7 @@
         
         
         $(".scroll-graphic").scrollStory({
-          triggerOffset: $(window).height() * .75 //how many pixels from top of screen to trigger animation for each box
+          triggerOffset: $(window).height() * .75 //how many pixels from top of screen to trigger animation for each box. .75 means that in order to trigger the animation, the text box needs to reach the 75% window's height in the viewport.
         });
         
         $(".scroll-graphic").on('itemfocus', (e,d) =>{
