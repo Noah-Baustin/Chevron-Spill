@@ -8,21 +8,24 @@ html,body{
 
 
 /* fonts */
+
+
+
 body{
-	font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+	font-family: font-family: 'Noto Serif', serif;
 	color: #333;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: 'Vollkorn', serif;
 }
 .lead-description{
-	font-family: Georgia, serif;
+	font-family: 'Vollkorn', serif;
 }
 
 
 /* CSS for hero image, either background photo or background video */
 .hero{
-  background-image: url("../assets/sample-images/desk-1.jpg");
+  background-image: url("../assets/Images/Images_From_CDFW_Social/Feb_23_Twitter/walking.on.beach.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -31,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .hero header{
-  background-color:rgba(0,0,0,0.75);
+  background-color:rgba(0,0,0,0.40);
 
 }
 .hero header > *{
@@ -71,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .image-holder{
-  background-image: url(../assets/sample-images/map-1.jpg);
+  background-image: url(../assets/Images/Images_From_CDFW_Social/Feb_23_Twitter/Eu9z9uKVoAQHrjD.jpg);
   position: absolute;
   width: 100vw;
   height: 100vh;
